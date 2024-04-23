@@ -1,21 +1,82 @@
 <html>
 <head>
-  <title>Empty HTML for ANP412 Webmapping Lab</title>
-
+  <title>Historic Weapons</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <style>
-
+#Ally{ width: 900px; height: 900px; }
 
   </style>
 
 </head>
 <body>
-
+  <div id="Ally"></div>
 
 
   <script>
+var map = L.map('Ally').setView([51.4829377,-0.2420245], 3);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([50.458455, 2.120121]).addTo(map);
+marker.bindPopup("<b><center>English longbow</center></b>The English Longbow was 6 ft in length which allowed for a large amount of power to be generated, which could penetrate armor. However, the draw weight of these bows, 90-110 lbs, required training to wield them properly. They showed great strength during the Battle of Agincourt, in which the British were able to win with great aid from the longbowmen. The bowmen made the French assault difficult in combination with the mud covering the battlefield.");
 
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([34.995940, 128.026485]).addTo(map);
+marker.bindPopup("<b><center>Turtle Ship (Geobukseon)</center></b>The turtle ship was a heavily armored warship developed by the Joseon Dynasty of Korea which lasted from the 15th century until the 19th century. They participated in many battles and only faced a single defeat leading to the eventual victory of the Koreans during the Imjin War (1592-1598). The first battle in which the turtle ship was deployed was the Battle of Sacheon, in which the Japanese could not board the ships leading to their defeat with no damage to the turtle ship.");
+  
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([33.251576, 106.639885]).addTo(map);
+marker.bindPopup("<b><center>Repeating Crossbow</center></b>The repeating crossbow had history in China dating back to the state of Chu (704-223 BCE) and would find its most common use during the Ming dynasty (1368-1644 CE). Despite this, the most common use of the crossbow would come from the Three Kingdoms period of China (220-280 CE). This would be due to Zhuge Liang who famously used the crossbow during times in which it was uncommon. His use of the crossbow led to the Chinese name of the crossbow being 诸葛弩 which is translated to Zhuge crossbow.");
+  
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([41.008123, 28.977684]).addTo(map);
+marker.bindPopup("<b><center>The Basilic</center></b>The Basilic is the name of the Ottoman cannon that was most notably designed by Orban who was a Hungarian cannon engineer. It ended up being one of the largest cannons built, being 27 ft long and able to shoot a 600 lb stone ball over a mile. It would be offered to the Ottomans after being rejected by the last Roman Emperor allowing for more pressure to be placed on the walls. They were the main reason behind the eventual Fall of Constantinople as they were able to break a portion of the wall and take hold of the city.");
+  
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([38.027525, -3.101048]).addTo(map);
+marker.bindPopup("<b><center>Balearic Sling</center></b>The Balearic slingers were from the Balearic Islands off the coast of Spain that were notable in their ability to use slings. They were trained very young to be able to use the sling as it is a deceptively difficult weapon to master accuracy on, with having to be able to time the release properly. They ended up playing roles in the Second Punic War, specifically the Battle of Baecula. The battle would end up being a loss for the Carthaginian army, which is the side that the slingers were on. After the conquest of the Islands, the slingers would then end up being used by the Roman army, showcasing that they still provided much use to the battle.");
+  
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([16.130616, -97.608307]).addTo(map);
+marker.bindPopup("<b><center>Macuahuitl</center></b>The Macuahuitl is a flat wooden club with obsidian shards set in the sides of it, making it similar to that of a sword. The use of obsidian in weaponry is very uncommon with the Aztecs being the most widely known users of it. Obsidian has its benefits and drawbacks being that it is extremely sharp, with the ability to completely decapitate a head easily, but very fragile to where it breaks often. It was used in the conquering of Tututepec, a Mixtec Kingdom, as it served the purpose of a standard sword in Europe, although it was only standard among elites.");
 
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([34.554529, 36.518768]).addTo(map);
+marker.bindPopup("<b><center>Chariot</center></b>Chariotry was an important aspect of Egyptian society and is dated back to the 16th century BCE. The Egyptians used these chariots in warfare as they were much faster and stronger than the infantry of the time, with the drawback being their great expense and training required to use one. The Battle of Kadesh in the 13th century BCE showcased the ability of the chariots to assault unsuspecting armies causing massive damage initially by the Hittites. The problem then arose of heavy chariots being outmaneuvered by lighter ones causing there to be a shift in the battle where it would ultimately come to a draw.");
 
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([38.799710, 22.544892]).addTo(map);
+marker.bindPopup("<b><center>Dory</center></b>The dory was a spear that ran from 6-10 ft in length made up of wood, with the spearhead being composed of iron and a counterbalance of an iron butt-spike. It was used by hoplites, heavy infantry, in Ancient Greece and played a major part in the formation of the phalanx. The phalanx was a defensive formation in which shields and spears worked to create a wall that would walk together in battle. Possibly the most famous use of a weapon was of the dory in the Greco-Persian Wars, with the obvious reference to the Battle of Thermopylae. Due to the weapon in combination with the shields, the soldiers were able to hold the movement of the Persians for a period of time despite the eventual defeat.");
+  
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([47.465222, 37.566473]).addTo(map);
+marker.bindPopup("<b><center>Mongol Bow</center></b>The Mongol bow is a recurved composite bow with the core being bamboo, the belly being horn, and sinew on the back. The issue with construction is that the animal glue used is susceptible for water damage, making rain and humidity a problem. These bows were typically shot on horseback and thus required extensive training from a young age, which would not be a problem as use of this bow was part of their lifestyle. The benefits of the bow were present in the Battle of Kalka River, where they were able to be fired and stashed away at quick notice due to their smaller size. The setting of the battle greatly benefitted the use of bow as crossing a river made the encroaching army easy to hit resulting in a victory.");
   </script>
 
 </body>
